@@ -38,9 +38,9 @@ async function main() {
   const editor = document.getElementById('editor');
 
   doc.update((root) => {
-    if(root.text){
+    if(root.text){ // 텍스트가 있는 경우
       editor.innerHTML = root.text;
-    } else{
+    } else{ // 텍스트가 없는 경우
       root.text = 'Edit me.';
     }
   });
